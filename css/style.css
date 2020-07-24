@@ -1,4 +1,5 @@
-@import url("./fonts.css");
+@import url("../css/fonts.css");
+/* @import url("./fonts.css"); */
 
 html,
 body {
@@ -42,6 +43,33 @@ ul {
     list-style-type: none;
 }
 
+h1 {
+    font-family: var(--Lexend_Deca);
+    font-size: 2rem;
+}
+h2 {
+    font-family: var(--Lexend_Deca);
+}
+h3 {
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    outline: none;
+}
+span {
+    font-family: var(--Abel);
+}
+.container {
+    margin: 0 5vw;
+}
+
 /* --------------------global variable-------------- */
 
 /* --------------navbar------------- */
@@ -52,8 +80,8 @@ nav {
     height: 0rem;
     min-height: 10vh;
     overflow: hidden;
-    /* transition: height 1s ease-in-out; */
-    transition: 0.5s ease-in-out;
+    transition: height 1s ease-in-out;
+    /* transition: 0.5s ease-in-out; */
 }
 
 .nav .nav-menu {
@@ -123,6 +151,123 @@ nav {
 }
 
 /* --------------navbar------------- */
+
+/* -------------main conten----------t */
+
+/* --------------site title----------- */
+
+main .site-title {
+    background: url("../assets/Background-image.png");
+    /* background: url(../assets/Background-image.png); */
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    /* below line not include in the source code */
+    /* overflow-y: hidden; */
+}
+
+main .site-title .site-background {
+    padding: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1,
+h3 {
+    /* -------------------------------------------make some issue when margin in equal to 0.3 */
+    margin: 0.3rem;
+    /* margin: 0.2rem; */
+    /* margin: 3rem; */
+}
+/* main .site-title .site-background h1,
+h2 {
+    margin: 3rem;
+} */
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+main .site-title .btn:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/* ---x-----------site title---------x-- */
+
+/* ----------------blog carousel--------- */
+
+main .blog {
+    /* some error occur due to misplace of double.qout.( "" ) */
+    background: url("../assets/Abract01.png");
+    /* background: url(../assets/Abract01.png); */
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+    overflow-y: hidden;
+}
+
+main .blog .blog-post {
+    padding-top: 6rem;
+}
+
+main .blog .blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgb(0, 0, 0, 0.2);
+    /* not in the source code */
+    /* overflow-y: hidden; */
+}
+
+main .blog-content .blog-title {
+    padding: 2rem 0;
+}
+main .blog-content .btn-blog {
+    padding: 0.7rem 2rem;
+    /* padding: 1rem 2rem; */
+    background: var(--sky);
+    margin: 0.5rem;
+}
+main .blog-content span {
+    display: block;
+}
+section .container .owl-nav {
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+    color: var(--text-gray);
+    background: transparent;
+    font-size: 2rem;
+}
+
+/* .owl-theme .owl-prev .owl-nav-prev [class*="owl-"]:hover {
+    background: transparent;
+} */
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: transparent;
+    color: var(--text-gray);
+}
+.owl-theme .owl-nav [class*="owl-"] {
+    outline: none;
+}
+
+/* main .blog-content  */
+/* x----------------blog carousel---------x */
+
+/* -------x------main conten--------x--t */
 
 /* -----------------view port less then or equal to 720px-------------- */
 
