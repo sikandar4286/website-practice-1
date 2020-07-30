@@ -367,8 +367,8 @@ main .site-content .post-content>.post-title a {
 .site-content>.sidebar .category-list .list-items {
     background: var(--sky);
     border-radius: 1rem;
-    padding: .4rem 1rem;
-    margin: .8rem 0rem;
+    padding: 0.4rem 1rem;
+    margin: 0.8rem 0rem;
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -391,7 +391,7 @@ main .site-content .post-content>.post-title a {
     background: var(--white) !important;
     bottom: 0rem !important;
     left: 1.5rem !important;
-    padding: .4rem .1rem !important;
+    padding: 0.4rem 0.1rem !important;
 }
 
 .site-content .sidebar .popular-post .post-title a {
@@ -403,7 +403,7 @@ main .site-content .post-content>.post-title a {
 }
 
 .site-content .sidebar .newsletter .form-element {
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
 }
 
 .site-content .sidebar .newsletter input {
@@ -427,16 +427,99 @@ main .site-content .post-content>.post-title a {
 
 .site-content .sidebar .popular-tags .tags .tag {
     background: var(--sky);
-    padding: .4rem 1rem;
+    padding: 0.4rem 1rem;
     border-radius: 3rem;
     margin: 0.4rem 0.6rem;
 }
 
-
 /*--------x---------- sidebar ---------------x--------*/
 
+/* -------x------main content--------x--t */
+/* -------------------footer------------------ */
+footer.footer {
+    background: var(--bg-color);
+    height: 100%;
+    position: relative;
+}
 
-/* -------x------main conten--------x--t */
+footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container>div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 0.9rem;
+}
+
+footer.footer .container h2 {
+    color: var(--white);
+}
+
+footer.footer.newsletter .form-element {
+    /* margin-right: 6rem; */
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input {
+    padding: 0.5rem 0.7rem;
+    border: none;
+    background: transparent;
+    color: var(--white);
+    font-family: var(--Josefin_Sans);
+    font-size: 1rem;
+    width: 74%;
+    background-color: black;
+}
+
+
+footer.footer .newsletter .form-element span {
+    background: var(--sky);
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+}
+
+footer.footer .instagram div>img {
+    width: 25%;
+    height: 50%;
+    display: inline-block;
+    display: inline-flex;
+    margin: .3rem .4rem;
+}
+
+footer.footer .follow div>i {
+    color: var(--white);
+    padding: 0 .4rem;
+}
+
+footer.footer .right {
+    justify-content: center;
+    font-family: var(--Josefin_Sans);
+}
+
+footer.footer .right h4 a {
+    color: var(--white);
+}
+
+footer.footer .move-up {
+    position: absolute;
+    /* overflow-y: hidden; */
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span {
+    color: var(--midnight);
+}
+
+footer.footer .move-up span:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* ----x---------------footer---------------- x-- */
 
 /* -----------------view port less then or equal to 720px-------------- */
 

@@ -17,4 +17,23 @@ $(document).ready(function () {
         // please be care full while write a code having a mistake in (navTest) the correct one in (navText)
         // navText: [$(".owl-navigation .owl-nav-prev"), $(".owl-navigation .owl-nav-next")],
     });
+    // jQuery Hide and Show
+    $("#hide").click(function () {
+        $(".footer").hide();
+    });
+    $("#show").click(function () {
+        $(".footer").show();
+    });
+    // click to scroll top 
+    $('.move-up span').click(function () {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 1000);
+    })
+    // $("#hide-sidebar").click(function () {
+    //     $(".sidebar").hide();
+    // });
+    // $("#show-sidebar").click(function () {
+    //     $(".sidebar").show();
+    // });
 });
