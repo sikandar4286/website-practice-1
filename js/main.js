@@ -23,7 +23,7 @@ $(document).ready(function () {
     // owl carousel for blog
     $(".owl-carousel").owlCarousel({
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 3000,
         dots: false,
         nav: true,
@@ -45,6 +45,9 @@ $(document).ready(function () {
             scrollTop: 0
         }, 1000);
     })
+    // AOS instance
+    AOS.init();
+
     // $("#hide-sidebar").click(function () {
     //     $(".sidebar").hide();
     // });
