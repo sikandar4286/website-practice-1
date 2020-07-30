@@ -1,3 +1,17 @@
+const responsive = {
+    0: {
+        items: 1
+    },
+    320: {
+        items: 1
+    },
+    560: {
+        items: 2
+    },
+    960: {
+        items: 3
+    }
+}
 $(document).ready(function () {
     $env = $(".nav");
     $toggleCollapse = $(".toggle-collapse");
@@ -14,6 +28,7 @@ $(document).ready(function () {
         dots: false,
         nav: true,
         navText: [$(".owl-navigation .owl-nav-prev"), $(".owl-navigation .owl-nav-next")],
+        responsive: responsive
         // please be care full while write a code having a mistake in (navTest) the correct one in (navText)
         // navText: [$(".owl-navigation .owl-nav-prev"), $(".owl-navigation .owl-nav-next")],
     });
